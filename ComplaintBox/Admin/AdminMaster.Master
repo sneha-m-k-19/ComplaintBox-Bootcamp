@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ComplaintBox.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:lightgreen" align="center" >
+    <h1 align="center">ADMIN DASHBOARD</h1>
+    <header style="background-color:white" align="center">
+        <br /><b>
+        <a href="../Admin/AdminPage.aspx" style="font-size:larger">Home</a>&nbsp&nbsp
+        <a href="../Admin/prodreg.aspx" style="font-size:larger">Product Registration</a>&nbsp&nbsp
+        <a href="../Admin/userVerification.aspx" style="font-size:larger">User Verification</a>&nbsp&nbsp
+        <a href="../Admin/ComplaintView.aspx" style="font-size:larger">Complaint View</a>&nbsp&nbsp
+        <a href="../Admin/ChatBox.aspx" style="font-size:larger">Chat Box</a>&nbsp&nbsp
+        <a href="../Guest/index.aspx" style="font-size:larger">Log Out </a>&nbsp&nbsp</b>
+        <br />
+        <br />
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

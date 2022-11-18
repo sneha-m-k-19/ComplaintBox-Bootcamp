@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserPage.master.cs" Inherits="ComplaintBox.User.UserPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:lightgreen">
+    <h1 align="center">User Dashboard</h1>
+    <header style="background-color:white" align="center">
+        <br /><b>
+        <a href="../User/User.aspx" style="font-size:larger">Home</a>&nbsp&nbsp
+        <a href="../User/Complaint.aspx"style="font-size:larger">Complaint Registration</a>&nbsp&nbsp
+        <a href="../User/ComplaintStatus.aspx" style="font-size:larger">Complaint Status</a>&nbsp&nbsp
+        <a href="../User/QueryPage.aspx" style="font-size:larger">Query Registration</a>&nbsp&nbsp
+        <a href="../User/Query_Status.aspx" style="font-size:larger">Query Status</a>&nbsp&nbsp
+        <a href="../User/ProductView.aspx" style="font-size:larger">Product View </a>&nbsp&nbsp
+        <a href="../Guest/index.aspx" style="font-size:larger">Log Out </a>&nbsp&nbsp</b>
+        <br />
+        <br />
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

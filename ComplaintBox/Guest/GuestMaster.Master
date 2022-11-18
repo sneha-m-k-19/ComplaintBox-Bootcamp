@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GuestMaster.master.cs" Inherits="ComplaintBox.Guest.GuestMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url(pro.jpg);background-repeat:no-repeat;">
+    <h1 align="center" style="color:white">COMPLAINT BOX</h1>
+    
+    <header style="background-color:white" align="center">
+        <br /><b>
+        <a href="../Guest/Login.aspx" style="font-size:larger">Login</a>&nbsp&nbsp
+        <a href="../Guest/userreg.aspx"style="font-size:larger">Registration</a>&nbsp&nbsp
+        </b>
+        <br />
+        <br />
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
